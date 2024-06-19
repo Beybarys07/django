@@ -1,0 +1,12 @@
+[tool.poetry]
+name = "myproject"
+version = "0.1.0"
+description = "Description of my project"
+authors = ["Your Name <your@email.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+psycopg2-binary = "^2.9.3"
+Django = "^4.0.1"
+django-otp = "^1.4.1"
+qrcode = "^7.4.2"

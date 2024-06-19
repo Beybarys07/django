@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<body>
+    
+
+    <nav >
+        
+        <div class="text">
+        <a href="" id="link3">Home</a>
+        </div>
+         <div class="text1">
+        <a href="{% url 'service1' %}" id="link2">Service</a>
+        </div> 
+        <div class="text2">
+        <a href="" id="link1">Contact</a>
+        </div>
+        <div>
+         
+        </div>
+        <div class="av">
+        <a href="" id="link">Support</a>
+        
+        </div>
+        
+        <a href="{% url 'signup' %}" id="link6" class="LLL">Sign Up</a>
+        <a href="{% url 'login' %}" class="JJJ">Log in</a>
+        <!-- <a href="{% url 'logout' %}">logout</a> -->
+        
+    </nav>
+    
+    <img src="/media/IMG/402cbf40-ca70-4d7a-8997-90b7b824fa4e.jpg" alt="" class="IMG">
+    <div class="H1">
+    <h1 style="font-size: 7vw;">Interior Design</h1>
+    </div>
+    
+    <p class="HHH"style="font-size: 1vw;">Step into a world where the art of Interior Design is meticulously crafted to bring together timeless elegance and cutting-edge 
+modern Innovation, Allowing you to transform your living spaces into the epitome of luxury and sophistication</p>
+    
+    <button class="abc2">Start Project</button>
+    <div class="squareq"></div>
+    <img src="/media/IMG/39b559d2-875c-48ed-a8b8-b924eedb05c8.jpg" alt="" class="IMG2">
+    <span style="font-size: 3vw;" class="span">600+</span>
+    <span style="font-size: 1vw;" class="span1">Satisfied Clients</span>
+    <span style="font-size: 3vw;" class="span2">100+</span>
+    <span style="font-size: 1vw;" class="span3">Unique Styles</span>
+    <span style="font-size: 3vw;" class="span4">400+</span>
+    <span style="font-size: 1vw;" class="span5">Project Complete</span>
+</body>
+
+{% endblock content %}

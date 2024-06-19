@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+    
+
+
+
+{% block content %}
+
+<div class="post_detail">
+    <img src="{{ mebel.photo.url }}" alt="">
+    <h5>{{ mebel.content }}</h5>
+    <h5>{{ categories.Name}}</h5>
+   
+
+
+    
+    <p>{{ mobels.content }}</p>
+    <a href="{% url 'service1' %}" class="btn btn-primary">Назад</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+<div class="card" style="width: 50rem;">
+    {% for c in all_category %}
+        <li><a href="{{ c.get_absolute_url }}"> {{c.Name}}</a></li>
+        {% endfor %}
+{% for i in ML %}
+    {% if i.photo %}
+    <img class="card-img-top" src="{{i.photo.url}}" alt="">
+    {% else %}
+    <h1>''</h1>
+    {% endif %}
+    <div class="card-body">
+    <p class="card-text">{{ i.mebel }}</p>
+    <p class="card-text">{{ i.content | linebreaks | truncatewords:20 }}</p>
+    <a href="{{ i.get_absolute_url }}" class="btn btn-primary">Читать больше</a>
+    <hr>
+   
+    
+{% endfor %}
+
+</div>
+</div>
+</div>
+{% endblock %}
